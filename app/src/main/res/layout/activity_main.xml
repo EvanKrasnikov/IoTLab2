@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- Bluetooth indication-->
+    <ImageView
+        android:id="@+id/bluetoothIndicationIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <!-- Bluetooth ON/OFF button-->
+    <Button
+        android:id="@+id/onOffBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        style="@style/Base.CardView" />
+
+    <!-- Choose paired device-->
+    <Button
+        android:id="@+id/modeBtn"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="MODE: Send" />
+
+    <Button
+        android:id="@+id/choosePairedDeviceBtn"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Choose paired device" />
+
+    <!-- Show paired device-->
+    <Button
+        android:id="@+id/fileOpenBtn"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Open File" />
+
+    <Button
+        android:id="@+id/runBtn"
+        style="@style/Base.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Run" />
+
+    <ListView
+        android:id="@+id/devicesLv"
+        style="@style/Base.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text=""
+        android:visibility="invisible"
+        />
+
+    <!-- Sender/Receiver mode-->
+
+    <!-- Open file -->
+
+</LinearLayout>
